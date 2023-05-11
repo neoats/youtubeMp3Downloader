@@ -1,0 +1,27 @@
+﻿<Window x:Class="main.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:main"
+            mc:Ignorable="d"
+            Title="MainWindow" Height="450" Width="800"
+            Background="LightSlateGray">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tbx1" HorizontalAlignment="Left" Margin="98,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="White" Grid.ColumnSpan="2" />
+        <Label x:Name="lbl1" Content="URL :" HorizontalAlignment="Left" Margin="11,9,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl2" Content="Path:" HorizontalAlignment="Left" Margin="11,49,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Margin="16,88,0,0" VerticalAlignment="Top" Width="54" Click="btn_save_Click" Grid.Column="1" FontWeight="Bold"/>
+        <Button x:Name="btn_path" Content="Path" HorizontalAlignment="Left" Margin="98,88,0,0" VerticalAlignment="Top" Width="51" Click="btn_path_Click" FontWeight="Bold"/>
+        <Label x:Name="lbl_path" Content="" HorizontalAlignment="Left" Margin="98,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.344,-0.621" Grid.ColumnSpan="2" Width="242"/>
+        <ProgressBar Visibility="Collapsed" x:Name="prog_bar" HorizontalAlignment="Left" Height="24" Margin="158,193,0,0" VerticalAlignment="Top" Width="235" Grid.ColumnSpan="2"/>
+        <Label x:Name="lbl_ex" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="111,31,0,0" VerticalAlignment="Top" Height="125" Width="182" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
+
